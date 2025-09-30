@@ -1,0 +1,15 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  username TEXT NOT NULL,
+  password TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'admin', '123456');
+INSERT INTO EMPLOYEE VALUES (0002, 'user01', '123456');
+
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE password = '123456';
